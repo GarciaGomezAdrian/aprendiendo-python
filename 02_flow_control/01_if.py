@@ -3,8 +3,8 @@
 # Permiten ejecutar bloques de código solo si se cumplen ciertas condiciones.
 ###
 
-import os
-os.system("clear")
+from os import system
+if system("clear") != 0: system("cls")
 
 print("\n Sentencia simple condicional")
 
