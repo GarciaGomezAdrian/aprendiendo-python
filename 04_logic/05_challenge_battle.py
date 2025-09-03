@@ -37,3 +37,45 @@ resultado = battle(lista_a, lista_b)  # -> "x"
 
 from os import system
 if system("clear") != 0: system("cls")
+
+print("\nEjercicio hecho por mi:")
+
+lista_a = [2, 4, 2]
+lista_b = [3, 3, 4]
+
+resultado = 0
+if lista_a[0] > lista_b[0]:
+  resultado = lista_a[0] - lista_b[0]
+  lista_a[1] += resultado
+elif lista_a[0] < lista_b[0]:
+  resultado = lista_b[0] - lista_a[0]
+  lista_b[1] += resultado
+
+if lista_a[1] > lista_b[1]:
+  resultado = lista_a[1] - lista_b[1]
+  lista_a[2] += resultado
+elif lista_a[1] < lista_b[1]:
+  resultado = lista_b[1] - lista_a[1]
+  lista_b[2] += resultado
+
+if lista_a[2] > lista_b[2]:
+  resultado = str(lista_a[2] - lista_b[2]) + "a"
+elif lista_a[2] < lista_b[2]:
+  resultado = str(lista_b[2] - lista_a[2]) + "b"
+else:
+  resultado = "x"
+
+print(resultado)
+
+
+print("\nEjercicio hecho por midudev:")
+
+def battle(lista_a, lista_b):
+  puntos_a = sum(lista_a)
+  puntos_b = sum(lista_b)
+  return f"{puntos_a - puntos_b}a" if puntos_a > puntos_b else f"{puntos_b - puntos_a}b" if puntos_b > puntos_a else "x"
+
+lista_a = [4, 4, 4]
+lista_b = [2, 8, 2]
+winner = battle(lista_a, lista_b)
+print(winner)
