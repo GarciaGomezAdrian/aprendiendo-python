@@ -18,8 +18,8 @@ print(f"Fecha y hora específica: {specific_date}")
 # 3. Formatear fechas
 # método strftime() para formatear fechas
 # pasarle el objeto datetime y el formato especificado
-# formato: 
-format_date = now.strftime("%d/%m/%Y %H:%M:%S") # Las / hay que añadirla para que aparezca, igual si quieres separar por guiones - 
+# formato:
+format_date = now.strftime("%d/%m/%Y %H:%M:%S") # Las / hay que añadirla para que aparezca, igual si quieres separar por guiones -
 print(f"Fecha formateada: {format_date}")       # o por cualquier separador que quieras
 
 format_date = now.strftime("%A, a %d de %B de %Y").capitalize() # capitalize() se usa para poner la primera en mayúscula

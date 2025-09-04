@@ -45,7 +45,7 @@ class AI_API:
     self.api_key = api_key
     self.url = url
     self.model = model
-  
+
   def call(self, prompt):
     headers = {
       "Content-Type": "application/json",
